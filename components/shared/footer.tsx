@@ -24,7 +24,7 @@ export default function Footer() {
           <Link href="/page/help">Ayuda</Link>
         </div>
         <div className="flex justify-center text-sm">
-          <p> © 2021-2025, {APP_NAME}, C.A.</p>
+          <p> © 2024-2025, {APP_NAME}, C.A.</p>
         </div>
         <div className="mt-4 flex justify-center text-sm text-gray-400">
           Urb. Chuao, Calle La Guairita, Edif. Los Frailes, P-5, Of. 504. Caracas. Venezuela (058) 0412-2729853

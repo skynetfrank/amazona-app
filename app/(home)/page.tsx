@@ -33,7 +33,7 @@ export default async function HomePage() {
       })),
     },
     {
-      title: "Explorar Lo Mas Nuevo",
+      title: "Lo Mas Reciente",
       items: newArrivals,
       link: {
         text: "Ver Todos",
@@ -41,7 +41,7 @@ export default async function HomePage() {
       },
     },
     {
-      title: "Descubre Los Mas Vendidos",
+      title: "Los Mas Vendidos",
       items: bestSellers,
       link: {
         text: "Ver Todo",
@@ -49,7 +49,7 @@ export default async function HomePage() {
       },
     },
     {
-      title: "Nuestro Productos",
+      title: "Mas Productos",
       items: featureds,
       link: {
         text: "Comprar Ahora",
