@@ -1,7 +1,7 @@
 import data from "@/lib/data";
 import { HomeCard } from "@/components/shared/home/home-card";
 import { HomeCarousel } from "@/components/shared/home/home-carousel";
-import { Card, CardContent } from "@/components/ui/card";
+//import { Card, CardContent } from "@/components/ui/card";
 import { getAllCategories, getProductsForCard } from "@/lib/actions/product.actions";
 import { toSlug } from "@/lib/utils";
 
@@ -21,9 +21,9 @@ export default async function HomePage() {
   });
   const cards = [
     {
-      title: "Categories to explore",
+      title: "Categorias",
       link: {
-        text: "See More",
+        text: "Ver Mas",
         href: "/search",
       },
       items: categories.map((category: string) => ({
@@ -33,26 +33,26 @@ export default async function HomePage() {
       })),
     },
     {
-      title: "Explore New Arrivals",
+      title: "Explorar Lo Mas Nuevo",
       items: newArrivals,
       link: {
-        text: "View All",
+        text: "Ver Todos",
         href: "/search?tag=new-arrival",
       },
     },
     {
-      title: "Discover Best Sellers",
+      title: "Descubre Los Mas Vendidos",
       items: bestSellers,
       link: {
-        text: "View All",
+        text: "Ver Todo",
         href: "/search?tag=new-arrival",
       },
     },
     {
-      title: "Featured Products",
+      title: "Nuestro Productos",
       items: featureds,
       link: {
-        text: "Shop Now",
+        text: "Comprar Ahora",
         href: "/search?tag=new-arrival",
       },
     },
