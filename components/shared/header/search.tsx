@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { APP_NAME } from "@/lib/constants";
-const categories = ["men", "women", "kids", "accessories"];
+const categories = ["caballeros", "damas", "niños", "accessories"];
 export default async function Search() {
   return (
     <form action="/search" method="GET" className="flex  items-stretch h-10 ">
@@ -12,7 +12,7 @@ export default async function Search() {
           <SelectValue placeholder="All" />
         </SelectTrigger>
         <SelectContent position="popper">
-          <SelectItem value="all">All</SelectItem>
+          <SelectItem value="all">Todos</SelectItem>
           {categories.map((category) => (
             <SelectItem key={category} value={category}>
               {category}

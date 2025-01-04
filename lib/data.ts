@@ -1,35 +1,35 @@
 const data = {
   headerMenus: [
     {
-      name: "Today's Deal",
+      name: "Promociones",
       href: "/search?tag=todays-deal",
     },
     {
-      name: "New Arrivals",
+      name: "Recientes",
       href: "/search?tag=new-arrival",
     },
     {
-      name: "Featured Products",
+      name: "Nuestros Productos",
       href: "/search?tag=featured",
     },
     {
-      name: "Best Sellers",
+      name: "Mas Vendidos",
       href: "/search?tag=best-seller",
     },
     {
-      name: "Browsing History",
+      name: "Historial",
       href: "/#browsing-history",
     },
     {
-      name: "Customer Service",
+      name: "Servicio al Cliente",
       href: "/page/customer-service",
     },
     {
-      name: "About Us",
+      name: "Nosotros",
       href: "/page/about-us",
     },
     {
-      name: "Help",
+      name: "Ayuda",
       href: "/page/help",
     },
   ],

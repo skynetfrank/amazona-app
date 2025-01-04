@@ -14,13 +14,13 @@ export default function Footer() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <ChevronUp className="mr-2 h-4 w-4" />
-          Volver arriba
+          Volver Arriba
         </Button>
       </div>
       <div className="p-4">
         <div className="flex justify-center  gap-3 text-sm">
-          <Link href="/page/conditions-of-use">Condiciones de Uso</Link>
-          <Link href="/page/privacy-policy"> Privacidad</Link>
+          <Link href="/page/conditions-of-use">Terminos y Condiciones</Link>
+          <Link href="/page/privacy-policy">Privacidad</Link>
           <Link href="/page/help">Ayuda</Link>
         </div>
         <div className="flex justify-center text-sm">
