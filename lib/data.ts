@@ -1,16 +1,16 @@
 const data = {
   headerMenus: [
     {
-      name: "Promociones",
-      href: "/search?tag=todays-deal",
+      name: "Productos",
+      href: "/search?tag=featured",
     },
     {
       name: "Recientes",
       href: "/search?tag=new-arrival",
     },
     {
-      name: "Nuestros Productos",
-      href: "/search?tag=featured",
+      name: "Promociones",
+      href: "/search?tag=todays-deal",
     },
     {
       name: "Mas Vendidos",
@@ -21,7 +21,7 @@ const data = {
       href: "/#browsing-history",
     },
     {
-      name: "Servicio al Cliente",
+      name: "Soporte",
       href: "/page/customer-service",
     },
     {

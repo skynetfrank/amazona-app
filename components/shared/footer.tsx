@@ -26,8 +26,8 @@ export default function Footer() {
         <div className="flex justify-center text-sm">
           <p> © 2021-2025, {APP_NAME}, C.A.</p>
         </div>
-        <div className="mt-8 flex justify-center text-sm text-gray-400">
-          Urb. Chuao, Calle La Guairita, Edificio Los Frailes, Piso 5, Oficia 504. Caracas. Venezuela (058) 0412-2729853
+        <div className="mt-4 flex justify-center text-sm text-gray-400">
+          Urb. Chuao, Calle La Guairita, Edif. Los Frailes, P-5, Of. 504. Caracas. Venezuela (058) 0412-2729853
         </div>
       </div>
     </footer>

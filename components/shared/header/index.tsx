@@ -13,8 +13,8 @@ export default function Header() {
       <div className="px-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center header-button font-extrabold text-2xl m-1 ">
-              <Image src="/icons/logo.svg" width={40} height={40} alt={`${APP_NAME} logo`} />
+            <Link href="/" className="md:text-2xl flex items-center header-button font-extrabold text-xs m-1">
+              <Image className="mr-2" src="/icons/logo.svg" width={40} height={40} alt={`${APP_NAME} logo`} />
               {APP_NAME}
             </Link>
           </div>
