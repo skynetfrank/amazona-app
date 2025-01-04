@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { APP_NAME } from "@/lib/constants";
-const categories = ["caballeros", "damas", "niños", "accessories"];
+const categories = ["caballeros", "damas", "niños", "accessorios"];
 export default async function Search() {
   return (
     <form action="/search" method="GET" className="flex  items-stretch h-10 ">
