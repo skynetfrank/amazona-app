@@ -61,6 +61,7 @@ export default async function HomePage() {
   ];
   const todaysDeals = await getProductsByTag({ tag: "todays-deal" });
   const bestSellingProducts = await getProductsByTag({ tag: "best-seller" });
+
   return (
     <>
       <HomeCarousel items={data.carousels} />
