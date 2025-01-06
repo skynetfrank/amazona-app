@@ -23,6 +23,15 @@ const CURRENCY_FORMATTER = new Intl.NumberFormat("en-US", {
   style: "currency",
   minimumFractionDigits: 2,
 });
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Formats a number as a currency string in USD.
+ *
+ * @param amount - The amount to be formatted.
+ * @returns A string representing the formatted currency.
+ */
+
+/******  07e4da65-114a-4f8f-923a-45dbdfef21c7  *******/
 export function formatCurrency(amount: number) {
   return CURRENCY_FORMATTER.format(amount);
 }
@@ -31,3 +40,7 @@ const NUMBER_FORMATTER = new Intl.NumberFormat("en-US");
 export function formatNumber(number: number) {
   return NUMBER_FORMATTER.format(number);
 }
+
+export const round2 = (num: number) => Math.round((num + Number.EPSILON) * 100) / 100;
+
+export const generateId = () => Array.from({ length: 24 }, () => Math.floor(Math.random() * 10)).join("");
