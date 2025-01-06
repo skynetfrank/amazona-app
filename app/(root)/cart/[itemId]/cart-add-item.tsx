@@ -38,13 +38,13 @@ export default function CartAddItem({ itemId }: { itemId: string }) {
             <div>
               <h3 className="text-xl font-bold flex gap-2 my-2">
                 <CheckCircle2Icon className="h-6 w-6 text-green-700" />
-                Added to cart
+                Agregado al Carrito
               </h3>
               <p className="text-sm">
                 <span className="font-bold"> Color: </span> {item.color ?? "-"}
               </p>
               <p className="text-sm">
-                <span className="font-bold"> Size: </span> {item.size ?? "-"}
+                <span className="font-bold"> Talla: </span> {item.size ?? "-"}
               </p>
             </div>
           </CardContent>
@@ -55,31 +55,31 @@ export default function CartAddItem({ itemId }: { itemId: string }) {
               <div className="flex justify-center items-center">
                 {itemsPrice < FREE_SHIPPING_MIN_PRICE ? (
                   <div className="text-center ">
-                    Add
+                    Agregar
                     <span className="text-green-700">
                       <ProductPrice price={FREE_SHIPPING_MIN_PRICE - itemsPrice} plain />
                     </span>{" "}
-                    of eligible items to your order to qualify for FREE Shipping
+                    de articulos eligibles para que su pedido califique para envio GRATIS
                   </div>
                 ) : (
                   <div className="flex items-center">
                     <div>
-                      <span className="text-green-700">Your order qualifies for FREE Shipping.</span> Choose this option
-                      at checkout.
+                      <span className="text-green-700">Su Pedido califica para Envio Gratis.</span> Elegir esta opcion
+                      al Pagar.
                     </div>
                   </div>
                 )}
               </div>
               <div className="lg:border-l lg:border-muted lg:pl-3 flex flex-col items-center gap-3  ">
                 <div className="flex gap-3">
-                  <span className="text-lg font-bold">Cart Subtotal:</span>
+                  <span className="text-lg font-bold">Subtotal:</span>
                   <ProductPrice className="text-2xl" price={itemsPrice} />
                 </div>
                 <Link href="/checkout" className={cn(buttonVariants(), "rounded-full w-full")}>
-                  Proceed to checkout ({items.reduce((a, c) => a + c.quantity, 0)} items)
+                  Proceder a Pagar ({items.reduce((a, c) => a + c.quantity, 0)} articulos)
                 </Link>
                 <Link href="/cart" className={cn(buttonVariants({ variant: "outline" }), "rounded-full w-full")}>
-                  Go to Cart
+                  Ir al Carrito
                 </Link>
               </div>
             </div>

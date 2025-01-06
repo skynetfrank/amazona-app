@@ -11,9 +11,9 @@ export default function BrowsingHistoryList({ className }: { className?: string 
     products.length !== 0 && (
       <div className="bg-background">
         <Separator className={cn("mb-4", className)} />
-        <ProductList title={"Related to items that you've viewed"} type="related" />
+        <ProductList title={"Articulos Relacionados"} type="related" />
         <Separator className="mb-4" />
-        <ProductList title={"Your browsing history"} hideDetails type="history" />
+        <ProductList title={"Tu Historial"} hideDetails type="history" />
       </div>
     )
   );
