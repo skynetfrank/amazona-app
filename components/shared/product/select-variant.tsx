@@ -39,7 +39,7 @@ export default function SelectVariant({ product, size, color }: { product: IProd
       )}
       {product.sizes.length > 0 && (
         <div className="mt-2 space-x-2 space-y-2">
-          <div>Size:</div>
+          <div>Talla:</div>
           {product.sizes.map((x: string) => (
             <Button
               asChild

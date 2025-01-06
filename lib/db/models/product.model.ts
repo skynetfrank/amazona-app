@@ -44,7 +44,7 @@ const productSchema = new Schema<IProduct>(
       required: true,
     },
     tags: { type: [String], default: ["nuevo ingreso"] },
-    colors: { type: [String], default: ["Blanco", "Rojo", "Negro"] },
+    colors: { type: [String], default: ["Blanco", "Rojo", "Negro", "Verde", "Amarillo"] },
     sizes: { type: [String], default: ["S", "M", "L"] },
     avgRating: {
       type: Number,

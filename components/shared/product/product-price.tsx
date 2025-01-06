@@ -32,7 +32,7 @@ const ProductPrice = ({
     <div className="space-y-2">
       <div className="flex justify-center items-center gap-2">
         <span className="bg-red-700 rounded-sm p-1 text-white text-sm font-semibold">{discountPercent}% menos</span>
-        <span className="text-red-700 text-xs font-bold">Oferta de Tiempo Limitado</span>
+        <span className="text-red-700 text-xs font-bold">Oferta por Tiempo Limitado</span>
       </div>
       <div className={`flex ${forListing && "justify-center"} items-center gap-2`}>
         <div className={cn("text-3xl", className)}>
