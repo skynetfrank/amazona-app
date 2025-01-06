@@ -23,18 +23,18 @@ export default function CartPage() {
       <div className="grid grid-cols-1 md:grid-cols-4  md:gap-4">
         {items.length === 0 ? (
           <Card className="col-span-4 rounded-none">
-            <CardHeader className="text-3xl  ">Your Shopping Cart is empty</CardHeader>
+            <CardHeader className="text-3xl  ">Tu Carrito de Compras esta Vacio</CardHeader>
             <CardContent>
-              Continue shopping on <Link href="/">{APP_NAME}</Link>
+              Continua comprando en <Link href="/">{APP_NAME}</Link>
             </CardContent>
           </Card>
         ) : (
           <>
             <div className="col-span-3">
               <Card className="rounded-none">
-                <CardHeader className="text-3xl pb-0">Shopping Cart</CardHeader>
+                <CardHeader className="text-3xl pb-0">Carrito de Compras</CardHeader>
                 <CardContent className="p-4">
-                  <div className="flex justify-end border-b mb-4">Price</div>
+                  <div className="flex justify-end border-b mb-4">Precio</div>
 
                   {items.map((item) => (
                     <div key={item.clientId} className="flex flex-col md:flex-row justify-between py-4 border-b gap-4">
@@ -61,7 +61,7 @@ export default function CartPage() {
                             <span className="font-bold">Color: </span> {item.color}
                           </p>
                           <p className="text-sm">
-                            <span className="font-bold">Size: </span> {item.size}
+                            <span className="font-bold">Talla: </span> {item.size}
                           </p>
                         </div>
                         <div className="flex gap-2 items-center">
@@ -70,7 +70,7 @@ export default function CartPage() {
                             onValueChange={(value) => updateItem(item, Number(value))}
                           >
                             <SelectTrigger className="w-auto">
-                              <SelectValue>Quantity: {item.quantity}</SelectValue>
+                              <SelectValue>Cantidad: {item.quantity}</SelectValue>
                             </SelectTrigger>
                             <SelectContent position="popper">
                               {Array.from({
@@ -83,7 +83,7 @@ export default function CartPage() {
                             </SelectContent>
                           </Select>
                           <Button variant={"outline"} onClick={() => removeItem(item)}>
-                            Delete
+                            Eliminar
                           </Button>
                         </div>
                       </div>
@@ -119,26 +119,26 @@ export default function CartPage() {
                 <CardContent className="py-4 space-y-4">
                   {itemsPrice < FREE_SHIPPING_MIN_PRICE ? (
                     <div className="flex-1">
-                      Add{" "}
+                      Agregar{" "}
                       <span className="text-green-700">
                         <ProductPrice price={FREE_SHIPPING_MIN_PRICE - itemsPrice} plain />
                       </span>{" "}
-                      of eligible items to your order to qualify for FREE Shipping
+                      de articulos elegibles a tu pedido para calificar para envio GRATIS
                     </div>
                   ) : (
                     <div className="flex-1">
-                      <span className="text-green-700">Your order qualifies for FREE Shipping</span> Choose this option
-                      at checkout
+                      <span className="text-green-700">Tu pedido califica para envio GRATIS</span> Elegir esta opcion al
+                      Pagar
                     </div>
                   )}
                   <div className="text-lg">
-                    Subtotal ({items.reduce((acc, item) => acc + item.quantity, 0)} items):{" "}
+                    Subtotal ({items.reduce((acc, item) => acc + item.quantity, 0)} articulos):{" "}
                     <span className="font-bold">
                       <ProductPrice price={itemsPrice} plain />
                     </span>{" "}
                   </div>
                   <Button onClick={() => router.push("/checkout")} className="rounded-full w-full">
-                    Proceed to Checkout
+                    Proceder a Pagar
                   </Button>
                 </CardContent>
               </Card>
